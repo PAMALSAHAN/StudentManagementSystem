@@ -1,0 +1,50 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Create Student </h3>
+    <form (ngSubmit) = "onSubmit()">
+
+        <div class="form-group">
+            <label> First Name</label>
+            <input type="text" class ="form-control" id = "firstName"
+                [(ngModel)] = "student.firstName" name = "firstName" placeholder="Enter First Name">
+        </div>
+
+        <div class="form-group">
+            <label> Last Name</label>
+            <input type="text" class ="form-control" id = "lastName"
+                [(ngModel)] = "student.lastName" name = "lastName" placeholder="Enter Last Name">
+        </div>
+
+        <div class="form-group">
+          <label> Age</label>
+          <input type="text" class ="form-control" id = "age"
+              [(ngModel)] = "student.age" name = "age" placeholder="Enter Age">
+        </div>
+
+        <div class="form-group">
+          <label> City</label>
+          <input type="text" class ="form-control" id = "city"
+              [(ngModel)] = "student.city" name = "city" placeholder="Enter city">
+        </div>
+
+        <div class="form-group">
+          <label> Height </label>
+          <input type="text" class ="form-control" id = "height"
+              [(ngModel)] = "student.height" name = "height" placeholder="Enter Height">
+        </div>
+
+        <div class="form-group">
+          <label> Weight </label>
+          <input type="text" class ="form-control" id = "weight"
+              [(ngModel)] = "student.weight" name = "weight" placeholder="Enter Weight">
+        </div>
+
+        <div class="form-group">
+          <label> Hobbies </label>
+          <input type="text" class ="form-control" id = "hobbies"
+              [(ngModel)] = "student.hobbies" name = "hobbies" placeholder="Eg - Reading story book,Stamp Collecting">
+        </div>
+
+        <button class = "btn btn-success"  type ="submit">Submit</button>
+
+    </form>
+    </div>
